@@ -1,0 +1,32 @@
+{
+  "name": "Amazon IVS Real-Time",
+  "short_name": "IVS Real-time",
+  "description": "A collection of demos that showcases real-time video and audio streaming powered by Amazon IVS.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa"
+}

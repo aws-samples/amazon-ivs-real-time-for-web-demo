@@ -1,0 +1,25 @@
+const FRUITS = [
+  'Apple',
+  'Banana',
+  'Cherry',
+  'Date',
+  'Elderberry',
+  'Fig',
+  'Grape',
+  'Honeydew',
+  'Imbe',
+  'Jackfruit',
+  'Kiwi',
+  'Lemon',
+  'Mango',
+  'Nectarine',
+  'Orange',
+  'Papaya',
+  'Quince',
+  'Raspberry',
+  'Strawberry',
+  'Starfruit',
+  'Tangerine',
+];
+
+export default FRUITS;

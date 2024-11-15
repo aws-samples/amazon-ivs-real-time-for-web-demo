@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), 8px);
+  }
+  .bottom-safe {
+    bottom: max(env(safe-area-inset-bottom), 8px);
+  }
+  .-bottom-safe {
+    bottom: calc(-1 * env(safe-area-inset-bottom));
+  }
+  .-mt-safe {
+    margin-top: calc(-1 * env(safe-area-inset-bottom));
+  }
+}
+
+@font-face {
+  font-family: 'Amazon Ember Modern Display';
+  src: url('/assets/font/EmberModernDisplayStd-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Modern Display';
+  src: url('/assets/font/EmberModernDisplayStd-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_Bd.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_Bd.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_BdIt.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_BdIt.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_He.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_He.woff') format('woff');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_HeIt.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_HeIt.woff') format('woff');
+  font-style: italic;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_Lt.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_Lt.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_LtIt.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_LtIt.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_Md.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_Md.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_MdIt.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_MdIt.woff') format('woff');
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_Rg.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_Rg.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('/assets/font/AmazonEmberDisplay_RgIt.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberDisplay_RgIt.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Mono';
+  src: url('/assets/font/AmazonEmberMono_Bd.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberMono_Bd.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Mono';
+  src: url('/assets/font/AmazonEmberMono_Rg.woff2') format('woff2'),
+    url('/assets/font/AmazonEmberMono_Rg.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+div {
+  user-select: none;
+}
