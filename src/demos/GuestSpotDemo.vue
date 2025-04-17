@@ -68,11 +68,11 @@ const guestPublisherVideoStream = ref(null);
 const guestPublisherAudioStream = ref(null);
 
 const isMainPublisher = (participant) => {
-  return participant.userId === 'rtmps-participant-host';
+  return participant.userId === 'dealer-0';
 }
 
 const isGuestPublisher = (participant) => {
-  return participant.userId === 'rtmps-participant-guest';
+  return participant.userId === 'dealer-1';
 }
 
 const releaseLocalVideo = () => {
@@ -103,7 +103,7 @@ const leaveGuestSlot = () => {
 
 onMounted(async () => {
   if (!stageStore.stage) {
-    const token = await fetchDemoToken(usernameStore.username, false, 'guest');
+    const token = await fetchDemoToken(usernameStore.username, 'GUEST');
     await stageStore.connectToStage(token);
   }
 

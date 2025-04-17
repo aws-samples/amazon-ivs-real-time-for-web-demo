@@ -240,16 +240,16 @@ const startCountdown = () => {
 }
 
 const isLeftPublisher = (participant) => {
-  return participant.userId === 'rtmps-participant';
+  return participant.userId === 'dealer-0';
 }
 
 const isRightPublisher = (participant) => {
-  return participant.userId === 'rtmps-participant-b';
+  return participant.userId === 'dealer-1';
 }
 
 onMounted(async () => {
   if (!stageStore.stage) {
-    const token = await fetchDemoToken(usernameStore.username, false, 'pk');
+    const token = await fetchDemoToken(usernameStore.username, 'PK');
     await stageStore.connectToStage(token);
   }
 

@@ -60,7 +60,7 @@ const handleDemoSelect = async (navigate, demoId, route) => {
   // Leave any existing stages
   if (stageStore.stage) stageStore.leaveStage();
 
-  const token = await fetchDemoToken(usernameStore.username, false, demoId);
+  const token = await fetchDemoToken(usernameStore.username, demoId);
   await stageStore.connectToStage(token);
   navigateWithTransition(navigate);
   stageLoading.value = false;
