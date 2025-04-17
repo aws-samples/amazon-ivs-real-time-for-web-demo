@@ -1,5 +1,5 @@
 <template>
-  <Avatar variant="beam" :name="props.name || usernameStore.username || 'User'" :title="true" :colors="colors" class="shrink-0" />
+  <Avatar variant="beam" :name="props.name?.replace(/\s+/g, '-') || usernameStore.username || 'User'" :title="true" :colors="colors" class="shrink-0" />
 </template>
 
 <script setup>

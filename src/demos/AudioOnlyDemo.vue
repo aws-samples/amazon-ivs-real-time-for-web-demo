@@ -191,7 +191,7 @@ const releaseMic = () => {
 
 onMounted(async () => {
   if (!stageStore.stage) {
-    const token = await fetchDemoToken(usernameStore.username, false, 'audio');
+    const token = await fetchDemoToken(usernameStore.username, 'AUDIO');
     await stageStore.connectToStage(token);
   }
 
@@ -212,7 +212,7 @@ onMounted(async () => {
   });
 
   stageStore.stage.on(StageEvents.STAGE_PARTICIPANT_STREAMS_ADDED, (participant, streams) => {
-    if (participant.userId !== 'rtmps-user') return;
+    if (participant.userId !== 'dealer-0') return;
     streams.forEach(stream => {
       if (stream.streamType === StreamType.AUDIO) {
         let index = slots.value.findIndex(p => p && p?.participant && p?.participant.id === participant.id);

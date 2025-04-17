@@ -1,9 +1,9 @@
 import { DEMO_API_URL } from '../../constants';
 
-export const fetchDemoToken = async (userId = '', publish = false, demo) => {
-  const body = JSON.stringify({ userId, publish, demo });
+export const fetchDemoToken = async (userId = '', demo) => {
+  const body = JSON.stringify({ userId, id: demo.toUpperCase() });
   const headers = { 'Content-Type': 'application/json; charset=utf-8' };
-  const response = await fetch(`${DEMO_API_URL}/join`, {
+  const response = await fetch(`${DEMO_API_URL}/create`, {
     method: 'POST',
     headers,
     body,
