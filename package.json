@@ -14,7 +14,7 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@vueuse/core": "^11.1.0",
     "amazon-ivs-chat-messaging": "^1.1.1",
-    "amazon-ivs-web-broadcast": "^1.26.0",
+    "amazon-ivs-web-broadcast": "^1.27.0",
     "axios": "^1.7.7",
     "canvas-confetti": "^1.9.3",
     "pinia": "^2.2.0",
