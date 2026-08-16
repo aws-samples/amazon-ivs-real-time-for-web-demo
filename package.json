@@ -23,7 +23,7 @@
     "tailwind-gradient-mask-image": "^1.2.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-themer": "^4.0.0",
-    "uuid": "^10.0.0",
+    "uuid": "^14.0.0",
     "vue": "^3.4.31",
     "vue-boring-avatars": "^1.4.0",
     "vue-router": "^4.4.2"
